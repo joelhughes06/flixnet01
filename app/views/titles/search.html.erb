@@ -1,0 +1,9 @@
+<article class="title_category">
+  <% @search1.each do |video| %>
+    <div class="span2">
+      <%= link_to video do %>
+        <img src='/<%= video.image_small %>' style='height:200px' class='indent-a' />
+      <% end %>
+    </div>
+  <% end %>
+</article>

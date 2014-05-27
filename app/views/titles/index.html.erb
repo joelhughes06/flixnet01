@@ -1,0 +1,16 @@
+	<p>
+		<% @categories1.each do |zyx| %>
+		<a><%= zyx.genus %></a>
+
+		<% zyx.recent_videos.each do |poster| %>
+			<form method="post">
+				<a href="/titles/<%= poster.id %>"><img src='/assets/<%= poster.image_small %>'></a>
+			</form>
+				<% end %>
+<% end %>
+</p>
+
+
+<h2>This is titles/index.html.erb</h2>
+
+

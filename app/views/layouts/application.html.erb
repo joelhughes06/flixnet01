@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flixnet</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= form_tag search_titles_path do %>
+<input class="search-query" name="search-term" type="text" placeholder="search for titles here"></input>
+<input type="submit" class="button" value="search" href="" >
+
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
